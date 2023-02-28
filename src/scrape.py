@@ -3,6 +3,7 @@ import pathlib
 import re
 import time
 import traceback
+from collections.abc import Iterable
 
 from absl import app
 from absl import flags
@@ -17,6 +18,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 
+from utils import read_words, save_words
+
 FLAGS = flags.FLAGS
 flags.DEFINE_string('output_dir', 'results', 'Directory path to save results')
 flags.DEFINE_bool('save_html', True, 'Whether to save every html file')
@@ -30,36 +33,9 @@ FIRST_WORD = 'ktp'
 URL = 'https://vortaro.net/#{}_kdc'
 TIMEOUT = 5
 
-# For implementing Esperanto's alphabetical order
-E_ALPHABET_CODE_POINT = {
-    'Ĉ': 67.5,
-    'Ĝ': 71.5,
-    'Ĥ': 72.5,
-    'Ĵ': 74.5,
-    'Ŝ': 83.5,
-    'Ŭ': 85.5,
-    'ĉ': 99.5,
-    'ĝ': 103.5,
-    'ĥ': 104.5,
-    'ĵ': 106.5,
-    'ŝ': 115.5,
-    'ŭ': 117.5,
-}
-
-
-def esorted(words):
-    """Sort given words by Esperanto's alphabetical order"""
-
-    def _key_func(word):
-        return [E_ALPHABET_CODE_POINT.get(char, ord(char)) for char in word]
-
-    return sorted(words, key=_key_func)
-
 
 class ScrapingProcessor:
-    def __init__(
-        self, output_dir: pathlib.Path, driver: webdriver.Chrome
-    ) -> None:
+    def __init__(self, output_dir: pathlib.Path, driver: webdriver.Chrome) -> None:
         self.driver = driver
 
         self.html_dir = output_dir / HTML_DIR
@@ -69,11 +45,11 @@ class ScrapingProcessor:
         self.done_path = output_dir / DONE_FILE
         self.no_results_path = output_dir / NO_RESULTS_FILE
 
-        self.not_yet = _read_words(self.not_yet_path)
+        self.not_yet = read_words(self.not_yet_path)
         if not self.not_yet:
             self.not_yet.add(FIRST_WORD)
-        self.done = _read_words(self.done_path)
-        self.no_results = _read_words(self.no_results_path)
+        self.done = read_words(self.done_path)
+        self.no_results = read_words(self.no_results_path)
 
         # For calculating remaining time
         self.count = 0
@@ -120,16 +96,18 @@ class ScrapingProcessor:
         except BaseException as e:
             self.not_yet.add(search_word)
             logging.info(
-                f'Interrupted by {e.__class__.__name__}'
-                f'(search_word: {search_word})'
+                f'Interrupted by {e.__class__.__name__}' f'(search_word: {search_word})'
             )
             logging.info(f'Error message:\n{traceback.format_exc()}')
 
     def save(self) -> None:
         """Save words"""
-        _save_words(self.not_yet, self.not_yet_path)
-        _save_words(self.done, self.done_path)
-        _save_words(self.no_results, self.no_results_path)
+        if not self.not_yet:
+            self.done = _postprocess(self.done)
+
+        save_words(self.not_yet, self.not_yet_path)
+        save_words(self.done, self.done_path)
+        save_words(self.no_results, self.no_results_path)
         logging.info('Successfully saved all the files')
 
     def _fetch_html(self, search_word: str) -> tuple[bool, str]:
@@ -161,20 +139,6 @@ class ScrapingProcessor:
         return self.average_time * len(self.not_yet)
 
 
-def _read_words(words_path: pathlib.Path) -> set[str]:
-    """Read words from given path"""
-    return (
-        set(words_path.read_text(encoding='utf-8').splitlines())
-        if words_path.exists()
-        else set()
-    )
-
-
-def _save_words(words: set[str], words_path: pathlib.Path) -> None:
-    """Save words to given path"""
-    words_path.write_text('\n'.join(esorted(words)), encoding='utf-8')
-
-
 def _extract_words(html: str) -> set[str]:
     """Extract words from html"""
     words = set()
@@ -190,9 +154,7 @@ def _extract_words(html: str) -> set[str]:
     for sense_tag in soup.find_all('div', class_='div senco'):
         words |= _split_into_words(sense_tag.text)
     # Extract derived forms of the headwords and their explanations
-    for derivation_tag in soup.find_all(
-        'div', class_=re.compile('div derivajho.*')
-    ):
+    for derivation_tag in soup.find_all('div', class_=re.compile('div derivajho.*')):
         for derived_form_tag in derivation_tag.find_all(
             'strong', class_=re.compile('^d.*')
         ):
@@ -224,8 +186,20 @@ def _is_valid_word(word) -> bool:
     return True
 
 
+def _postprocess(words: Iterable[str]) -> list[str]:
+    """Postprocess words (just minor changes for now)"""
+    postprocessed_words = []
+    for word in words:
+        if word in {'-½exp', '½exp', 'å', 'être'}:
+            continue
+        word = re.sub('[?!]', '', word)
+        postprocessed_words.append(word)
+
+    return postprocessed_words
+
+
 def main(_argv) -> None:
-    output_dir = pathlib.Path(FLAGS.output_dir)
+    output_dir = pathlib.Path(__file__).parent.parent / FLAGS.output_dir
 
     options = ChromeOptions()
     options.add_argument('--headless')

@@ -1517,7 +1517,7 @@ aĝon
 aĝoprezidanto
 aĝpiramido
 aĝulo
-aha!
+aha
 ahasvero
 ahaŝveroŝ
 ahimsa
@@ -1528,7 +1528,7 @@ ahimson
 ahura
 ahura-mazdo
 aĥ
-aĥ!
+aĥ
 aĥab
 aĥabo
 aĥajano
@@ -1559,7 +1559,7 @@ aizoaceae
 aizoacoj
 aizoo
 aj
-aj!
+aj
 ajakso
 ajapano
 ajatolo
@@ -7240,7 +7240,7 @@ austrinus
 autumnale
 autumnalis
 aŭ
-aŭ!
+aŭ
 aŭ-funkcio
 aŭbado
 aŭbrietio
@@ -7812,7 +7812,7 @@ azuleĥo
 b
 b-komplekso
 ba
-ba!
+ba
 baal
 baal-peor
 baal-zebub
@@ -7865,7 +7865,7 @@ babordopo
 babuŝo
 babylonica
 bac
-bac!
+bac
 baccata
 baccifera
 baci
@@ -8844,7 +8844,7 @@ baztrunko
 bazuko
 bca
 be
-be!
+be
 bearnezo
 bearno
 beas
@@ -9655,7 +9655,7 @@ biro
 birojn
 biron
 bis
-bis!
+bis
 bisako
 bisaŭo
 bisekci
@@ -9723,7 +9723,7 @@ bizono
 bjalistoko
 bjelostoka
 bjelostoko
-blabla!
+blabla
 blablai
 blagi
 blago
@@ -10660,7 +10660,7 @@ bovon
 bovoviro
 bovsimila
 bovstomakaĵo
-br! brr!
+br brr
 bra
 brabanto
 braceleto
@@ -11552,7 +11552,7 @@ bulteno
 bulvardo
 bulvardoj
 bulvardojn
-bum!
+bum
 bumerango
 bumgruo
 bumo
@@ -14134,7 +14134,7 @@ cypriniformes
 ĉirpi
 ĉistero
 ĉit
-ĉit!
+ĉit
 ĉitiea
 ĉitieulo
 ĉiu
@@ -16936,7 +16936,7 @@ diritaĵo
 diritan
 dirite
 dirko
-dirlididi!
+dirlididi
 dirmaniero
 dirmanieroj
 diro
@@ -19871,7 +19871,7 @@ eĝolagro
 eĝon
 eĝrubando
 eĝvolbo
-ehe!
+ehe
 ehud
 eĥas
 eĥe
@@ -19895,7 +19895,7 @@ eĥoplenan
 eĥosondilo
 eiffel
 ej
-ej!
+ej
 eja
 ejakula
 ejakulanto
@@ -19917,7 +19917,7 @@ ejon
 ejro
 ejŝhornio
 ek
-ek!
+ek
 ekaboni
 ekagi
 ekagu
@@ -20344,7 +20344,7 @@ ekruliĝis
 ekruliĝon
 ekruliĝus
 eks
-eks!
+eks
 eks-sovetio
 eksa
 eksaltas
@@ -26160,7 +26160,7 @@ feino
 feinoj
 feinrakonto
 fek
-fek!
+fek
 feka
 fekado
 fekaĵo
@@ -26669,7 +26669,7 @@ feŭdrajto
 feŭdulo
 fezo
 fi
-fi!
+fi
 fia
 fiadvokato
 fiaj
@@ -29364,7 +29364,7 @@ foveeto
 foveo
 foveola
 fr
-fr!
+fr
 fraĉjo
 fraga
 fragarbo
@@ -30106,7 +30106,7 @@ ftizon
 ftizulo
 ftizuloj
 fu
-fu!
+fu
 fucophyceae
 fuegio
 fuelo
@@ -33602,9 +33602,9 @@ h-cho
 h-cooh
 h-relo
 ha
-ha ha ha!
-ha ha!
-ha!
+ha
+ha ha
+ha ha ha
 habel
 habelo
 habelon
@@ -33712,7 +33712,7 @@ haladzon
 halanĝo
 halebardisto
 halebardo
-haleluja!
+haleluja
 halepa
 halepa pino
 halepa sorgo
@@ -33726,7 +33726,7 @@ halikero
 halito
 hall
 halo
-halo!
+halo
 halofito
 halogena lampo
 halogenido
@@ -34112,8 +34112,8 @@ hcno
 hco
 hco-n
 he
-he ho!
-he!
+he
+he ho
 heaviside
 heba
 hebefrenio
@@ -34168,7 +34168,7 @@ heĝoj
 heĝon
 heine
 heisenberg
-hej!
+hej
 hejma
 hejmaj
 hejmajn
@@ -34966,7 +34966,7 @@ higrometro
 higroskopo
 hihi
 hihii
-hik!
+hik
 hiki
 hikorio
 hiksoso
@@ -35378,11 +35378,11 @@ hiv-pozitiva
 hizikio
 hjalmar
 hm
-hm!
+hm
 hnco
 hncs
 ho
-ho!
+ho
 ho-ĉi-min
 ho-ĉi-min-urbo
 hoang
@@ -35402,7 +35402,7 @@ hoĝkino
 hohencolernoj
 hohenstaŭfenoj
 hohenstaŭfoj
-hoj!
+hoj
 hoji
 hojli
 hojo
@@ -35435,7 +35435,7 @@ hokon
 hokradika
 hokstango
 hokusaj
-hola!
+hola
 holandajn
 holandano
 holandezo
@@ -35713,7 +35713,7 @@ hooc-
 hooc-c
 hoocch
 hookeri
-hop!
+hop
 hopadas
 hopadi
 hopi
@@ -35819,7 +35819,7 @@ horus
 horuso
 horzona
 horzono
-hosana!
+hosana
 hoso
 hospico
 hospitala
@@ -35837,7 +35837,7 @@ hostion
 hostiujo
 hoŝea
 hot
-hot! hoto!
+hot hoto
 hotela
 hotelisto
 hotelistoj
@@ -35851,9 +35851,9 @@ hotentoto
 hotentotoj
 hscn
 hu
-hu ha!
+hu
+hu ha
 hu hu
-hu!
 huas
 hublo
 hubo
@@ -35886,7 +35886,7 @@ hughes
 hugo
 hui
 huj
-huj!
+huj
 huĵi
 huli
 huligano
@@ -36016,7 +36016,7 @@ hupo
 hupon
 hupoŝaltilo
 hura
-hura!
+hura
 hurai
 hurdo
 hurdokurado
@@ -36037,7 +36037,7 @@ husaroj
 huso
 husserl
 husumo
-huŝ!
+huŝ
 huŝi
 huzo
 hybanthus
@@ -41168,7 +41168,7 @@ kaptotan
 kaptote
 kaptoteni
 kaptu
-kaptu!
+kaptu
 kapturna
 kapturnan
 kapturniĝo
@@ -49593,9 +49593,9 @@ kuvon
 kuzino
 kuzo
 kuzon
-kŭaks!
+kŭaks
 kŭanĵuo
-kva! kvak!
+kva kvak
 kvadranto
 kvadrata
 kvadrata radiko
@@ -49971,7 +49971,7 @@ kvitiĝas
 kvitiĝi
 kvitiĝos
 kvivit
-kvivit!
+kvivit
 kviviti
 kvivito
 kvivitoj
@@ -50398,7 +50398,7 @@ laktuko
 laktukosimila
 laktumo
 lakuno
-lala!
+lala
 lalai
 lama
 lamaejo
@@ -52649,7 +52649,7 @@ ljubljano
 lli
 lmperio
 lo
-lo!
+lo
 loaro
 loba
 lobaj
@@ -64979,14 +64979,14 @@ ohav
 ohio
 ohiorivero
 oho
-oho!
+oho
 ohola
 oholiba
 oĥotska
 oid
 oide
 oj
-oj!
+oj
 ojdemio
 ojdio
 ojn
@@ -66595,7 +66595,7 @@ p-dimensia
 p-toluensulfonata
 p-toluensulfonila
 pa
-pa!
+pa
 pabularia
 paca
 pacaj
@@ -68129,7 +68129,7 @@ paŝtiston
 paŝtos
 paŝtu
 paŝu
-pat!
+pat
 pata
 patagonia
 patagonia leporo
@@ -74959,7 +74959,7 @@ prozisto
 prozo
 prozodio
 prozopopeo
-pru!
+pru
 prua
 pruda
 prudeco
@@ -75240,7 +75240,7 @@ ptomaino
 ptozo
 ptyonoprogne
 pu
-pu!
+pu
 puazo
 puba
 puba monto
@@ -75322,7 +75322,7 @@ puduo
 puerpera
 puerpera febro
 puerpereco
-puf!
+puf
 pufa
 pufaj
 pufaĵo
@@ -75458,7 +75458,7 @@ pulvorteo
 pulvoŝargon
 pulvoturo
 pulvujo
-pum!
+pum
 pumiki
 pumiko
 pumila
@@ -76386,7 +76386,7 @@ ranunculaceae
 ranunkolacoj
 ranunkolo
 ranziana
-rap rap!
+rap rap
 rapa
 rapaceum
 rapax
@@ -80188,7 +80188,7 @@ ruinoj
 ruinojn
 ruinon
 ruĵo
-ruk!
+ruk
 ruktaĵo
 ruktas
 rukti
@@ -86741,7 +86741,7 @@ spirtubojn
 spirulino
 spirvojoj
 spit
-spit!
+spit
 spitado
 spitante
 spitas
@@ -86922,7 +86922,7 @@ srilankan
 srilanko
 sro
 sss
-sss!
+sss
 stabestro
 stabila
 stabilaj
@@ -87575,7 +87575,7 @@ stompi
 stompitaj
 stompo
 stonehenge
-stop!
+stop
 stopi
 stoplejo
 stoplo
@@ -89978,7 +89978,7 @@ sèvres
 ŝajnus
 ŝajnverticilo
 ŝajnverticiloj
-ŝak!
+ŝak
 ŝaka
 ŝakale
 ŝakalo
@@ -89995,12 +89995,12 @@ sèvres
 ŝakludantan
 ŝakludanto
 ŝakludo
-ŝakmat!
+ŝakmat
 ŝako
 ŝakoj
 ŝakojn
 ŝakon
-ŝakon!
+ŝakon
 ŝakpeco
 ŝakpecoj
 ŝakpecon
@@ -90839,7 +90839,7 @@ sèvres
 ŝpinrado
 ŝpinturnilon
 ŝproso
-ŝpruc!
+ŝpruc
 ŝpruca
 ŝprucado
 ŝprucadon
@@ -90944,7 +90944,7 @@ sèvres
 ŝrumpigis
 ŝrumpu
 ŝŝ
-ŝŝ!
+ŝŝ
 ŝtala
 ŝtalaj
 ŝtalajn
@@ -93722,7 +93722,7 @@ tizanopteroj
 tizanuroj
 tjo
 tjo-kanto
-tju!
+tju
 tjurka
 tjurko
 tjurkoj
@@ -94119,7 +94119,7 @@ toŭfuo
 toxicodendron
 toxifera
 tpr
-tpr!
+tpr
 tra
 tra ra ra
 tra-
@@ -94277,7 +94277,7 @@ trafitajn
 trafitaĵo
 trafitan
 trafite
-trafite!
+trafite
 traflua
 trafluanta
 trafluas
@@ -96156,7 +96156,7 @@ truston
 truto
 trutta
 ts
-ts!
+ts
 tsetseo
 ttt
 ttt-servilo
@@ -96693,7 +96693,7 @@ uedo
 uesanto
 uesto
 uf
-uf!
+uf
 ugando
 ugra
 ugraj
@@ -97505,7 +97505,7 @@ uzurpo
 uzus
 uzvaloro
 ŭ
-ŭa!
+ŭa
 ŭato
 ŭo
 v
@@ -98240,7 +98240,7 @@ vazomovaj
 vazon
 vazopresino
 ve
-ve!
+ve
 veadas
 veadi
 veaspekta
